@@ -1,0 +1,122 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'underscore' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 warn package.json nw-demo@0.0.1 No description
+5 warn package.json nw-demo@0.0.1 No repository field.
+6 warn package.json nw-demo@0.0.1 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'underscore', null ]
+9 verbose cache add name=undefined spec="underscore" args=["underscore",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'underscore',
+10 verbose parsed url   path: 'underscore',
+10 verbose parsed url   href: 'underscore' }
+11 silly lockFile 64bc6893-underscore underscore
+12 verbose lock underscore /home/xiaoleiyu/.npm/64bc6893-underscore.lock
+13 silly lockFile 64bc6893-underscore underscore
+14 silly lockFile 64bc6893-underscore underscore
+15 verbose addNamed [ 'underscore', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 7629b758-underscore underscore@
+18 verbose lock underscore@ /home/xiaoleiyu/.npm/7629b758-underscore.lock
+19 silly addNameRange { name: 'underscore', range: '*', hasData: false }
+20 verbose request where is /underscore
+21 verbose request registry http://registry.npm.taobao.org/
+22 verbose request id 4f6ad1f733dd80a4
+23 verbose url raw /underscore
+24 verbose url resolving [ 'http://registry.npm.taobao.org/', './underscore' ]
+25 verbose url resolved http://registry.npm.taobao.org/underscore
+26 verbose request where is http://registry.npm.taobao.org/underscore
+27 info trying registry request attempt 1 at 23:12:53
+28 verbose etag "1427989774000"
+29 http GET http://registry.npm.taobao.org/underscore
+30 http 200 http://registry.npm.taobao.org/underscore
+31 silly registry.get cb [ 200,
+31 silly registry.get   { date: 'Wed, 18 Nov 2015 15:12:58 GMT',
+31 silly registry.get     'content-type': 'application/json; charset=utf-8',
+31 silly registry.get     'content-length': '44321',
+31 silly registry.get     connection: 'keep-alive',
+31 silly registry.get     etag: '"ad21-/bXBvVHnIkk80I3Q3qSwnA"',
+31 silly registry.get     'x-readtime': '31' } ]
+32 silly addNameRange number 2 { name: 'underscore', range: '*', hasData: true }
+33 silly addNameRange versions [ 'underscore',
+33 silly addNameRange   [ '1.8.3',
+33 silly addNameRange     '1.8.2',
+33 silly addNameRange     '1.8.1',
+33 silly addNameRange     '1.8.0',
+33 silly addNameRange     '1.7.0',
+33 silly addNameRange     '1.6.0',
+33 silly addNameRange     '1.5.2',
+33 silly addNameRange     '1.5.1',
+33 silly addNameRange     '1.5.0',
+33 silly addNameRange     '1.4.4',
+33 silly addNameRange     '1.4.3',
+33 silly addNameRange     '1.4.2',
+33 silly addNameRange     '1.4.1',
+33 silly addNameRange     '1.4.0',
+33 silly addNameRange     '1.3.3',
+33 silly addNameRange     '1.3.2',
+33 silly addNameRange     '1.3.1',
+33 silly addNameRange     '1.3.0',
+33 silly addNameRange     '1.2.4',
+33 silly addNameRange     '1.0.4',
+33 silly addNameRange     '1.2.3',
+33 silly addNameRange     '1.0.3',
+33 silly addNameRange     '1.2.1',
+33 silly addNameRange     '1.2.0',
+33 silly addNameRange     '1.1.7',
+33 silly addNameRange     '1.1.0',
+33 silly addNameRange     '1.1.5',
+33 silly addNameRange     '1.1.4',
+33 silly addNameRange     '1.1.3',
+33 silly addNameRange     '1.1.2',
+33 silly addNameRange     '1.1.1',
+33 silly addNameRange     '1.1.6',
+33 silly addNameRange     '1.2.2' ] ]
+34 verbose addNamed [ 'underscore', '1.8.3' ]
+35 verbose addNamed [ '1.8.3', '1.8.3' ]
+36 silly lockFile e5e32fca-underscore-1-8-3 underscore@1.8.3
+37 verbose lock underscore@1.8.3 /home/xiaoleiyu/.npm/e5e32fca-underscore-1-8-3.lock
+38 silly lockFile 6bf68101-re-download-underscore-1-8-3-tgz http://registry.npm.taobao.org/underscore/download/underscore-1.8.3.tgz
+39 verbose lock http://registry.npm.taobao.org/underscore/download/underscore-1.8.3.tgz /home/xiaoleiyu/.npm/6bf68101-re-download-underscore-1-8-3-tgz.lock
+40 verbose addRemoteTarball [ 'http://registry.npm.taobao.org/underscore/download/underscore-1.8.3.tgz',
+40 verbose addRemoteTarball   '4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022' ]
+41 info retry fetch attempt 1 at 23:12:59
+42 verbose fetch to= /tmp/npm-4446-opPzuMwU/registry.npm.taobao.org/underscore/download/underscore-1.8.3.tgz
+43 http GET http://registry.npm.taobao.org/underscore/download/underscore-1.8.3.tgz
+44 http 200 http://registry.npm.taobao.org/underscore/download/underscore-1.8.3.tgz
+45 silly lockFile 6bf68101-re-download-underscore-1-8-3-tgz http://registry.npm.taobao.org/underscore/download/underscore-1.8.3.tgz
+46 silly lockFile 6bf68101-re-download-underscore-1-8-3-tgz http://registry.npm.taobao.org/underscore/download/underscore-1.8.3.tgz
+47 silly lockFile e5e32fca-underscore-1-8-3 underscore@1.8.3
+48 silly lockFile e5e32fca-underscore-1-8-3 underscore@1.8.3
+49 silly lockFile 7629b758-underscore underscore@
+50 silly lockFile 7629b758-underscore underscore@
+51 error Error: EACCES, mkdir '/home/xiaoleiyu/.npm/underscore/1.8.3'
+51 error  { [Error: EACCES, mkdir '/home/xiaoleiyu/.npm/underscore/1.8.3']
+51 error   errno: 3,
+51 error   code: 'EACCES',
+51 error   path: '/home/xiaoleiyu/.npm/underscore/1.8.3',
+51 error   parent: 'nw-demo' }
+52 error Please try running this command again as root/Administrator.
+53 error System Linux 3.13.0-32-generic
+54 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "underscore"
+55 error cwd /home/xiaoleiyu/repos/public_housing
+56 error node -v v0.10.35
+57 error npm -v 1.4.28
+58 error path /home/xiaoleiyu/.npm/underscore/1.8.3
+59 error code EACCES
+60 error errno 3
+61 error stack Error: EACCES, mkdir '/home/xiaoleiyu/.npm/underscore/1.8.3'
+62 verbose exit [ 3, true ]

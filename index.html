@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <title>高新区锦业公寓房屋预定</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style type="text/css">
+        .page-header {
+            padding-left: 40px;
+        }
+
+        .btn-proxy-settings {
+            float: right;
+        }
+
+        .logs-console {
+            font-size: 12px;
+            text-align: left;
+            color: #3c3c3c;
+        }
+
+        span.logs-success {
+            font-size: 30px;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-header">
+    <h1>高新区锦业公寓房屋预定</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <a class="btn btn-default btn-proxy-settings" role="button" data-toggle="collapse" href="#collapse-proxy-form"
+           aria-expanded="false"
+           aria-controls="collapseExample">
+            设置代理
+        </a>
+
+        <div class="collapse" id="collapse-proxy-form">
+            <div class="well">
+                <form class="form-inline form-proxy-settings">
+                    <div class="form-group">
+                        <input type="url" class="form-control" id="host"
+                               placeholder="代理地址, 格式：http://www.example.com:port">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="username" placeholder="用户名">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password" placeholder="密码">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">保存</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <p class="logs-console"></p>
+        </div>
+    </div>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="public_rental_housing.js"></script>
+</body>
+</html>
