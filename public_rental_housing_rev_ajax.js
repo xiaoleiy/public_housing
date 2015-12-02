@@ -47,7 +47,6 @@
         };
 
         fs.writeSync(FILE_PROXY_SETTINGS, JSON.stringify(proxy));
-
         startSearch();
     });
 
