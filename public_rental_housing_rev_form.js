@@ -10,7 +10,7 @@
         _ = require('underscore'),
         cheerio = require('cheerio'),
         urlRentalHousing = 'http://gzfa.xdz.com.cn/ModuleBook/PersonSelectRoom/Index?CommunityID=e46fe9e8-bd85-4b87-b68d-a3c501146273',
-        MS_PER_MINUTE = 60000 * 5;
+        MS_PER_MINUTE = 60000;
 
     /**
      * The list of communities
@@ -135,7 +135,6 @@
      * @param proxy The proxy string following the convention of "http://username:password@www.example.com:port"
      */
     function searchAvailRooms(buildingsUUIDByComm, proxy) {
-        console.info('Starting to request the building reservation...');
         var predefinedFormParam = proxy ? {proxy: proxy} : {};
 
         // iterate all the buildings and rooms
@@ -154,7 +153,6 @@
                     var $ = cheerio.load(body);
                     var blocksContainer = $('div.building-container');
                     var blocks = blocksContainer.find('div.room-available');
-                    var emptyBlocks = blocksContainer.find('div.room-data:empty');
                     if (blocks && blocks.length > 0) {
                         _.each(blocks, function (block, idx) {
                             var roomNo = $(block).attr('room-no');
@@ -170,7 +168,7 @@
                         return;
                     }
 
-                    console.info('[' + now() + '] ' + building.name + '-' + room.name + ' 没有空房。');
+                    console.info('[' + now() + '] ' + building.name + '-' + room.name + '\t无房。');
                 });
             });
         });
